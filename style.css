@@ -722,3 +722,145 @@ button:focus-visible {
         font-size: 29px;
     }
 }
+
+/* 15. TOOLS & TECHNOLOGIES */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.tool-item {
+    min-height: 190px;
+    padding: 32px;
+
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    transition: background-color 0.3s ease;
+}
+
+.tool-item:hover {
+    background-color: rgba(184, 169, 138, 0.12);
+}
+
+.tool-item span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--champagne);
+}
+
+.tool-item h3 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+
+    font-family: var(--font-heading);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.tool-item p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.tools-note {
+    margin-top: 25px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--muted);
+}
+
+/* Mobile Layout */
+
+@media (max-width: 650px) {
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-item {
+        min-height: auto;
+        padding: 26px 22px;
+    }
+
+}
+
+/* 16. PRICING SECTION */
+
+.pricing-description {
+    max-width: 760px;
+    margin-top: 25px;
+
+    font-size: 16px;
+    line-height: 2;
+
+    color: var(--muted);
+}
+
+.pricing-bottom {
+    margin-top: 55px;
+    padding: 35px;
+
+    background-color: rgba(184, 169, 138, 0.12);
+    border: 1px solid var(--line);
+}
+
+.pricing-bottom h3 {
+    font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.pricing-bottom p {
+    max-width: 600px;
+    margin-top: 12px;
+
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--muted);
+}
+
+.pricing-link {
+    display: inline-block;
+    margin-top: 25px;
+
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid var(--champagne);
+    padding-bottom: 5px;
+
+    transition: color 0.3s ease;
+}
+
+.pricing-link:hover {
+    color: var(--champagne);
+}
+
+/* Mobile Layout */
+
+@media (max-width: 650px) {
+
+    .pricing-bottom {
+        padding: 25px 22px;
+    }
+
+    .pricing-bottom h3 {
+        font-size: 29px;
+    }
+
+    .pricing-description {
+        font-size: 15px;
+    }
+
+}
